@@ -1,0 +1,121 @@
+.header{
+    font-family: 'Dancing Script', cursive;
+}
+.header__logo{
+    width: 50px;
+    height: 50px;
+    @media only screen and (max-width:480px) { 
+        width:2rem;
+        height:6rem;
+    }
+}
+.header__boton{
+    background-color: #386150 !important;
+    border-color: #58B09C !important;
+}
+.bloque-carrucel{
+    margin: 30px 0px;
+}
+.bloque-carrucel__tamanio{
+    width:850px;
+    height:500px;
+    @media only screen and (max-width:480px) {
+          width:30rem;
+          height:60rem;
+    }   
+}
+.bloque-carrucel__tamanio--centrar{
+    text-align: center;
+    justify-content: center;
+}
+.tabla {
+     font-family: 'Zen Dots', cursive;
+     margin: 30px 0px;
+}
+.tabla__borde{
+    border: 3px solid #386150;
+}
+
+.footer{
+    font-family: 'Dancing Script', cursive;
+}
+.footer__boton{
+    background-color: #386150 !important;
+    border-color: #58B09C !important;
+}
+.formulario{
+    font-family: 'Original Surfer', cursive;
+    margin: 30px 0px;
+}
+.formulario__boton{
+    background-color: #386150 !important;
+    border-color: #58B09C !important;
+}
+.formulario__elemento{
+    border-color: #386150 !important;
+    background-color: #58B09C !important;
+}
+.informacion{
+    border: 3px solid #386150;
+    padding: 30px 0px;
+    margin: 30px 0px ;
+}
+.informacion__negrita{
+    font-weight: bold;
+    margin-top: 20px;
+}
+body{
+    background-image: linear-gradient(#58B09C,#CAF7E2) ;
+}
+h1{
+    color: #386150;
+}
+.fondo{
+    background-color: #30CA82;
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(2,50%);
+gap: 1px 1px;
+justify-content: stretch;
+text-align: center;
+padding: 2px;
+border: 2px solid #386150;
+margin: 15px 50px;
+}
+$bloques: (
+    imagen: #58B09C,
+    texto: #30CA82
+);
+@each $bloque, $color in $bloques {
+    .fila--#{$bloque}{
+    background-color: $color;
+    }
+}
+@for $numero from 1 through 3 {
+    h#{$numero}{font-size: 4rem-$numero;}
+}
+.adaptacion{
+    width: 100%;
+    height: auto;
+}
+.parrafo{
+border: 3px solid #386150;
+  padding: 2rem 12rem;
+  margin: 2rem 12rem;
+}
+footer{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #386150;
+}
+.pie{
+    color: #386150;
+}
+.centrarIconos{
+    display: flex;
+    justify-content: space-between;
+}
+.separar{
+    padding-top: 5px;
+}

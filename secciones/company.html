@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../css/pruebaCSS.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="Viewport" content="width=device-width,initial-scale=1.0 "/>
+    <meta name="keywords" content="formulario, consultas, stock, empresa">
+    <title>
+      cafetin/formulario
+    </title>
+    <meta name="description" content="venta por menor y por mayor de granos de cafe organicos importados">
+  </head>
+  <body>
+    <nav class="container">
+      <div class="row justify-content-between header">
+        <img alt="imagen de un cartel con una taza de cafe" class="header__logo"src="../fotos/logo_para_html_cafe.png">
+        <div>
+          <a class="btn btn-primary header__boton" href="../index.html" role="button">home</a>
+          <a class="btn btn-primary header__boton" href="products.html" role="button">products</a>
+          <a class="btn btn-primary header__boton" href="company.html" role="button">company</a>
+          <a class="btn btn-primary header__boton" href="blog.html" role="button">blog</a>
+        </div>
+      </div>
+    </nav> 
+    <div class="container">
+      <div class="row justify-content-center">
+        <H1>FORMULARIO DE CONSULTA</H1>
+      </div>
+    </div>
+      <form class="formulario container">
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <input type="text" class="form-control" placeholder="nombre">
+              </div>
+            </div>
+              <div class="row justify-content-center separar">
+                <div class="col-4">
+                  <input type="text" class="form-control" placeholder="apellido">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="form-group col-4">
+                <label for="exampleFormControlInput1">Email </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="form-group col-4">
+                <label for="formGroupExampleInput">Telefono</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Telefono">
+              </div>
+            </div>
+              <div class="row justify-content-center">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Persona juridica</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Persona física</label>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="form-group col-4">
+                <label for="exampleFormControlSelect1">Tipo de cafe</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>cafe de brasil</option>
+                  <option>cafe de colombia</option>
+                </select>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="form-group col-4">
+                <label for="exampleFormControlTextarea1">texto de consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+          <!-- Button trigger modal -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <button type="button" class="btn btn-primary formulario__boton" data-toggle="modal" data-target="#exampleModal">
+               Enviar consulta
+              </button>
+          
+             <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">consulta enviada</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                <div class="modal-body">
+                <p>Consulta enviada correctamente. En menos de 24 hs hábiles se le enviará un correo con su consulta.Muchas Gracias por su consulta.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input class="btn btn-primary formulario__elemento" type="reset" value="Resetear">
+        </div>
+      </div>
+      </form>
+      <footer class="container-fluid pie">
+        <div class="row justify-content-center">
+          <div class="col-2 centrarIconos">
+            <a href="https://www.facebook.com/?ref=logo"><img src="../fotos/facebook.png" alt="logo de facebook"></a>
+            <a href="https://www.instagram.com/?hl=es-la"><img src="../fotos/instagram.png" alt="logo de instagram"></a>
+            <a href="https://twitter.com/?lang=es"><img src="../fotos/twitter.png" alt="logo de twitter"></a>
+            <a href="https://web.whatsapp.com/">  <img src="../fotos/whatsapp.png" alt="logo de whatsapp"></a>
+            <a href="https://www.youtube.com/">  <img src="../fotos/youtube.png" alt="logo de youtube"></a>
+          </div>
+        </div>
+      </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> 
+  </body>
+</html>
